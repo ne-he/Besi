@@ -60,7 +60,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Test: Footer menampilkan email dan nomor telepon
     - _Requirements: 3.1, 3.2_
 
-  - [-] 3.6 Buat RootLayout di app/layout.tsx
+  - [x] 3.6 Buat RootLayout di app/layout.tsx
     - Bungkus `children` dengan `<Navbar />` dan `<Footer />`
     - Tambahkan metadata SEO: `title` dan `description`
     - Definisikan font dan warna dasar via Tailwind di `<body>`
@@ -74,7 +74,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - _Requirements: 4.1, 4.2_
 
 - [ ] 4. Halaman Beranda (landing)
-  - [~] 4.1 Buat HeroSection
+  - [-] 4.1 Buat HeroSection
     - Buat `components/HeroSection.tsx` dengan judul "Jasa Olah Besi Profesional untuk Bangunan Anda"
     - Tambahkan subjudul "Kursi, Pagar, Kanopi, dan segala kebutuhan besi Anda"
     - Tambahkan tombol CTA "Lihat Layanan" menggunakan `next/link` ke `/services`
