@@ -7,7 +7,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
 ## Tasks
 
 - [ ] 1. Inisialisasi proyek
-  - [-] 1.1 Buat proyek Next.js dengan TypeScript dan Tailwind CSS
+  - [x] 1.1 Buat proyek Next.js dengan TypeScript dan Tailwind CSS
     - Jalankan `create-next-app` dengan flag `--typescript` dan `--tailwind`
     - Hapus file default yang tidak diperlukan (contoh: `app/globals.css` boilerplate, `public/vercel.svg`, dll.)
     - Buat struktur folder: `components/`, `utils/`, `types/`
@@ -15,7 +15,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - _Requirements: 1.1, 1.2, 1.3, 1.4_
     - Git commit: `V1: Inisialisasi proyek - setup Next.js TypeScript Tailwind dan struktur folder`
 
-  - [~] 1.2 Konfigurasi ESLint, Prettier, dan next.config.js
+  - [-] 1.2 Konfigurasi ESLint, Prettier, dan next.config.js
     - Install dan konfigurasi Prettier dengan `.prettierrc`
     - Pastikan ESLint config kompatibel dengan Next.js dan TypeScript
     - Verifikasi `next.config.js` siap untuk deployment Vercel
