@@ -87,7 +87,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Test: tombol CTA mengarah ke `/services`
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [-] 4.3 Buat ServiceCard dan LayananSection
+  - [x] 4.3 Buat ServiceCard dan LayananSection
     - Buat `components/ServiceCard.tsx` dengan props `title`, `description`, `icon` dan tombol "Detail" yang mengarah ke `/services`
     - Buat `components/LayananSection.tsx` dengan data 3 layanan (Kursi Besi, Pagar Besi, Kanopi) dalam grid
     - _Requirements: 6.1, 6.2, 6.3, 6.4, 6.5_
@@ -109,7 +109,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Tag komentar: `// Feature: besikita-v1-fondasi-landing, Property 3: Setiap ServiceCard memiliki tombol Detail yang mengarah ke /services`
     - Gunakan `fc.constantFrom(...serviceItems)` dengan `numRuns: 100`
 
-  - [~] 4.7 Buat KeunggulanSection
+  - [-] 4.7 Buat KeunggulanSection
     - Buat `components/KeunggulanSection.tsx` dengan 3 kolom: Bahan Berkualitas, Harga Bersaing, Pengerjaan Tepat Waktu
     - Setiap kolom memiliki judul dan deskripsi singkat
     - _Requirements: 7.1, 7.2_
