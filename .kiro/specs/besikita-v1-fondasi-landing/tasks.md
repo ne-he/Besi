@@ -23,7 +23,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Git commit: `V1: Konfigurasi tooling - ESLint Prettier next.config.js`
 
 - [ ] 2. Setup testing framework
-  - [-] 2.1 Install dan konfigurasi Vitest, @testing-library/react, dan fast-check
+  - [x] 2.1 Install dan konfigurasi Vitest, @testing-library/react, dan fast-check
     - Install `vitest`, `@vitejs/plugin-react`, `@testing-library/react`, `@testing-library/jest-dom`, `fast-check`
     - Buat `vitest.config.ts` dengan environment jsdom
     - Buat `vitest.setup.ts` untuk import `@testing-library/jest-dom`
@@ -31,7 +31,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Git commit: `V1: Setup testing - Vitest testing-library fast-check`
 
 - [ ] 3. Komponen layout
-  - [~] 3.1 Buat komponen Navbar
+  - [-] 3.1 Buat komponen Navbar
     - Buat `components/Navbar.tsx` dengan 4 item navigasi: Beranda (`/`), Layanan (`/services`), Galeri (`/gallery`), Kontak (`/contact`)
     - Gunakan `next/link` untuk setiap item menu
     - Styling dasar Tailwind (flex, padding, warna)
