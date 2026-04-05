@@ -31,7 +31,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Git commit: `V1: Setup testing - Vitest testing-library fast-check`
 
 - [ ] 3. Komponen layout
-  - [-] 3.1 Buat komponen Navbar
+  - [x] 3.1 Buat komponen Navbar
     - Buat `components/Navbar.tsx` dengan 4 item navigasi: Beranda (`/`), Layanan (`/services`), Galeri (`/gallery`), Kontak (`/contact`)
     - Gunakan `next/link` untuk setiap item menu
     - Styling dasar Tailwind (flex, padding, warna)
@@ -49,7 +49,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Tag komentar: `// Feature: besikita-v1-fondasi-landing, Property 1: Setiap item navigasi Navbar memiliki href yang benar`
     - Gunakan `fc.constantFrom(...navItems)` dengan `numRuns: 100`
 
-  - [~] 3.4 Buat komponen Footer
+  - [-] 3.4 Buat komponen Footer
     - Buat `components/Footer.tsx` dengan teks copyright BesiKita
     - Tampilkan email `info@besikita.com` dan telepon `0812-3456-7890`
     - _Requirements: 3.1, 3.2, 3.3_
