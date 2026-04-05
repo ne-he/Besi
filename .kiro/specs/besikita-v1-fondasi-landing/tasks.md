@@ -74,7 +74,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - _Requirements: 4.1, 4.2_
 
 - [ ] 4. Halaman Beranda (landing)
-  - [-] 4.1 Buat HeroSection
+  - [x] 4.1 Buat HeroSection
     - Buat `components/HeroSection.tsx` dengan judul "Jasa Olah Besi Profesional untuk Bangunan Anda"
     - Tambahkan subjudul "Kursi, Pagar, Kanopi, dan segala kebutuhan besi Anda"
     - Tambahkan tombol CTA "Lihat Layanan" menggunakan `next/link` ke `/services`
@@ -87,7 +87,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Test: tombol CTA mengarah ke `/services`
     - _Requirements: 5.1, 5.2, 5.3, 5.4_
 
-  - [~] 4.3 Buat ServiceCard dan LayananSection
+  - [-] 4.3 Buat ServiceCard dan LayananSection
     - Buat `components/ServiceCard.tsx` dengan props `title`, `description`, `icon` dan tombol "Detail" yang mengarah ke `/services`
     - Buat `components/LayananSection.tsx` dengan data 3 layanan (Kursi Besi, Pagar Besi, Kanopi) dalam grid
     - _Requirements: 6.1, 6.2, 6.3, 6.4, 6.5_
