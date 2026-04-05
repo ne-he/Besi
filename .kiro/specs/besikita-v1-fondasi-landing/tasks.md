@@ -125,7 +125,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Tag komentar: `// Feature: besikita-v1-fondasi-landing, Property 4: Setiap item keunggulan dirender dengan judul dan deskripsi`
     - Gunakan `fc.constantFrom(...advantageItems)` dengan `numRuns: 100`
 
-  - [ ] 4.10 Rakit app/page.tsx dengan semua section
+  - [x] 4.10 Rakit app/page.tsx dengan semua section
     - Import dan susun `HeroSection`, `LayananSection`, `KeunggulanSection` di `app/page.tsx`
     - _Requirements: 8.1_
     - Git commit: `V1: Halaman Beranda - rakit HeroSection LayananSection KeunggulanSection`
@@ -135,7 +135,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
   - Tanya user jika ada pertanyaan atau perubahan yang diperlukan.
 
 - [ ] 6. Routing dan halaman placeholder
-  - [ ] 6.1 Buat halaman placeholder /services, /gallery, /contact
+  - [-] 6.1 Buat halaman placeholder /services, /gallery, /contact
     - Buat `app/services/page.tsx`, `app/gallery/page.tsx`, `app/contact/page.tsx` dengan konten minimal
     - Setiap halaman menampilkan judul yang menandai halaman tersedia
     - _Requirements: 8.2, 8.3, 8.4, 8.5_
