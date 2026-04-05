@@ -135,7 +135,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
   - Tanya user jika ada pertanyaan atau perubahan yang diperlukan.
 
 - [ ] 6. Routing dan halaman placeholder
-  - [-] 6.1 Buat halaman placeholder /services, /gallery, /contact
+  - [x] 6.1 Buat halaman placeholder /services, /gallery, /contact
     - Buat `app/services/page.tsx`, `app/gallery/page.tsx`, `app/contact/page.tsx` dengan konten minimal
     - Setiap halaman menampilkan judul yang menandai halaman tersedia
     - _Requirements: 8.2, 8.3, 8.4, 8.5_
@@ -147,7 +147,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Test: halaman `/contact` dapat dirender tanpa error
     - _Requirements: 8.2, 8.3, 8.4_
 
-  - [ ] 6.3 Verifikasi navigasi Navbar ke semua halaman
+  - [-] 6.3 Verifikasi navigasi Navbar ke semua halaman
     - Pastikan semua link di Navbar mengarah ke rute yang benar dan tidak ada error
     - _Requirements: 2.4, 2.5, 2.6, 2.7, 8.1, 8.2, 8.3, 8.4_
     - Git commit: `V1: Verifikasi navigasi - semua rute Navbar berjalan tanpa error`
