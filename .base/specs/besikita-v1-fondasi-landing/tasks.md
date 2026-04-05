@@ -147,7 +147,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Test: halaman `/contact` dapat dirender tanpa error
     - _Requirements: 8.2, 8.3, 8.4_
 
-  - [-] 6.3 Verifikasi navigasi Navbar ke semua halaman
+  - [x] 6.3 Verifikasi navigasi Navbar ke semua halaman
     - Pastikan semua link di Navbar mengarah ke rute yang benar dan tidak ada error
     - _Requirements: 2.4, 2.5, 2.6, 2.7, 8.1, 8.2, 8.3, 8.4_
     - Git commit: `V1: Verifikasi navigasi - semua rute Navbar berjalan tanpa error`
