@@ -15,7 +15,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - _Requirements: 1.1, 1.2, 1.3, 1.4_
     - Git commit: `V1: Inisialisasi proyek - setup Next.js TypeScript Tailwind dan struktur folder`
 
-  - [-] 1.2 Konfigurasi ESLint, Prettier, dan next.config.js
+  - [x] 1.2 Konfigurasi ESLint, Prettier, dan next.config.js
     - Install dan konfigurasi Prettier dengan `.prettierrc`
     - Pastikan ESLint config kompatibel dengan Next.js dan TypeScript
     - Verifikasi `next.config.js` siap untuk deployment Vercel
@@ -23,7 +23,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Git commit: `V1: Konfigurasi tooling - ESLint Prettier next.config.js`
 
 - [ ] 2. Setup testing framework
-  - [~] 2.1 Install dan konfigurasi Vitest, @testing-library/react, dan fast-check
+  - [-] 2.1 Install dan konfigurasi Vitest, @testing-library/react, dan fast-check
     - Install `vitest`, `@vitejs/plugin-react`, `@testing-library/react`, `@testing-library/jest-dom`, `fast-check`
     - Buat `vitest.config.ts` dengan environment jsdom
     - Buat `vitest.setup.ts` untuk import `@testing-library/jest-dom`
