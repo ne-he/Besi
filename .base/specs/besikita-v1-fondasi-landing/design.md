@@ -2,7 +2,7 @@
 
 ## Overview
 
-BesiKita V1 adalah website pemasaran statis untuk bisnis jasa olah besi. Tujuan utama V1 adalah membangun fondasi teknis yang solid dan menyajikan landing page yang informatif kepada calon pelanggan Bengkel
+BesiKita V1 adalah website pemasaran statis untuk bisnis jasa olah besi. Tujuan utama V1 adalah membangun fondasi teknis yang solid dan menyajikan landing page yang informatif kepada calon pelanggan Bengkel Besi
 
 Stack yang digunakan:
 - **Next.js 14** dengan App Router

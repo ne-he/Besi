@@ -2,7 +2,7 @@
 
 ## Introduction
 
-BesiKita V1 adalah fondasi proyek website untuk menjual jasa pembuatan produk berbahan besi: kursi besi, pagar besi, kanopi, dan kebutuhan besi bangunan lainnya. V1 mencakup inisialisasi proyek Next.js, komponen layout global (Navbar & Footer), halaman landing yang lengkap, serta routing ke halaman-halaman placeholder (/services, /gallery, /contact).
+BesiKita V1 adalah fondasi proyek website untuk menjual jasa pembuatan produk berbahan besi: kursi besi, pagar besi, kanopi, dan kebutuhan besi bangunan lainnya. V1 mencakup inisialisasi proyek Next.js, komponen layout global (Navbar & Footer), halaman landing yang lengkap, serta routing ke halaman-halaman placeholder (/services, /gallery, /contact)
 
 ## Glossary
 
