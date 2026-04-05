@@ -49,7 +49,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Tag komentar: `// Feature: besikita-v1-fondasi-landing, Property 1: Setiap item navigasi Navbar memiliki href yang benar`
     - Gunakan `fc.constantFrom(...navItems)` dengan `numRuns: 100`
 
-  - [-] 3.4 Buat komponen Footer
+  - [x] 3.4 Buat komponen Footer
     - Buat `components/Footer.tsx` dengan teks copyright BesiKita
     - Tampilkan email `info@besikita.com` dan telepon `0812-3456-7890`
     - _Requirements: 3.1, 3.2, 3.3_
@@ -60,7 +60,7 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
     - Test: Footer menampilkan email dan nomor telepon
     - _Requirements: 3.1, 3.2_
 
-  - [~] 3.6 Buat RootLayout di app/layout.tsx
+  - [-] 3.6 Buat RootLayout di app/layout.tsx
     - Bungkus `children` dengan `<Navbar />` dan `<Footer />`
     - Tambahkan metadata SEO: `title` dan `description`
     - Definisikan font dan warna dasar via Tailwind di `<body>`
