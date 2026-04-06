@@ -50,12 +50,12 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - **Validates: Requirements 2.2**
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 6: semua produk dirender`
 
-  - [-] 2.3 Tambahkan tombol "Lihat Detail" di `ProductCard` menggunakan `next/link` dengan `href={/product/${product.id}}`.
+  - [x] 2.3 Tambahkan tombol "Lihat Detail" di `ProductCard` menggunakan `next/link` dengan `href={/product/${product.id}}`.
     - _Requirements: 2.5, 2.6_
     - _Commit: "V2: Tombol Lihat Detail - Tambahkan Link ke /product/[id] di ProductCard"_
 
 - [ ] 3. Halaman detail produk
-  - [~] 3.1 Buat `app/product/[id]/page.tsx` dengan dynamic routing. Terima `params: { id: string }`. Cari produk dengan `products.find(p => p.id === params.id)`. Jika tidak ditemukan, render pesan "Produk tidak ditemukan".
+  - [-] 3.1 Buat `app/product/[id]/page.tsx` dengan dynamic routing. Terima `params: { id: string }`. Cari produk dengan `products.find(p => p.id === params.id)`. Jika tidak ditemukan, render pesan "Produk tidak ditemukan".
     - _Requirements: 3.2_
     - _Commit: "V2: Detail page routing - Buat halaman /product/[id] dengan dynamic routing dan not-found handling"_
 
