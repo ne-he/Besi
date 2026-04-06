@@ -80,11 +80,11 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - _Commit: "V2: Tombol Pesan Jasa - Tambahkan tombol dengan alert placeholder di halaman detail"_
 
 - [ ] 4. Navigasi dan penyempurnaan
-  - [-] 4.1 Verifikasi semua tombol "Lihat Detail" di `/services` mengarah ke halaman detail yang benar. Pastikan `href` di setiap `ProductCard` sesuai dengan `id` produk yang dirender.
+  - [x] 4.1 Verifikasi semua tombol "Lihat Detail" di `/services` mengarah ke halaman detail yang benar. Pastikan `href` di setiap `ProductCard` sesuai dengan `id` produk yang dirender.
     - _Requirements: 2.6_
     - _Commit: "V2: Verifikasi navigasi detail - Pastikan semua link Lihat Detail mengarah ke id yang benar"_
 
-  - [~] 4.2 Pastikan `Navbar` memiliki link "Layanan" dengan `href="/services"` yang aktif dan berfungsi. Verifikasi Navbar tampil di halaman detail produk.
+  - [-] 4.2 Pastikan `Navbar` memiliki link "Layanan" dengan `href="/services"` yang aktif dan berfungsi. Verifikasi Navbar tampil di halaman detail produk.
     - _Requirements: 4.1, 4.2, 4.3_
     - _Commit: "V2: Navbar /services aktif - Verifikasi dan perbaiki navigasi Navbar ke halaman layanan"_
 
