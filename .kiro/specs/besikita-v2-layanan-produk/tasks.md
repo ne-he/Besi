@@ -7,7 +7,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
 ## Tasks
 
 - [ ] 1. Data produk dummy
-  - [-] 1.1 Buat folder `data/` dan file `data/products.ts`. Definisikan interface `Product` di `types/index.ts` dengan field: `id`, `nama`, `slug`, `kategori`, `deskripsiSingkat`, `deskripsiPanjang`, `gambar`, `hargaDasar`, `dimensiContoh`. Re-export tipe dari `data/products.ts`.
+  - [x] 1.1 Buat folder `data/` dan file `data/products.ts`. Definisikan interface `Product` di `types/index.ts` dengan field: `id`, `nama`, `slug`, `kategori`, `deskripsiSingkat`, `deskripsiPanjang`, `gambar`, `hargaDasar`, `dimensiContoh`. Re-export tipe dari `data/products.ts`.
     - _Requirements: 1.1_
     - _Commit: "V2: Setup tipe Product - Definisikan interface Product di types/index.ts dan buat data/products.ts"_
 
@@ -16,7 +16,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - **Validates: Requirements 1.1**
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 1: semua field lengkap`
 
-  - [~] 1.2 Isi array `products` di `data/products.ts` dengan 6 produk: 2 Kursi Besi (`kursi-lipat-01`, `kursi-taman-01`), 2 Pagar Besi (`pagar-minimalis-01`, `pagar-klasik-01`), 2 Kanopi (`kanopi-carport-01`, `kanopi-teras-01`). Semua `gambar` menggunakan `https://placehold.co/400x300`.
+  - [-] 1.2 Isi array `products` di `data/products.ts` dengan 6 produk: 2 Kursi Besi (`kursi-lipat-01`, `kursi-taman-01`), 2 Pagar Besi (`pagar-minimalis-01`, `pagar-klasik-01`), 2 Kanopi (`kanopi-carport-01`, `kanopi-teras-01`). Semua `gambar` menggunakan `https://placehold.co/400x300`.
     - _Requirements: 1.2, 1.3, 1.4, 1.5, 1.6, 1.7_
     - _Commit: "V2: Isi data produk - Tambahkan 6 produk dummy dengan gambar placeholder"_
 
