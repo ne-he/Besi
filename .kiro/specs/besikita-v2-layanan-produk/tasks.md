@@ -75,12 +75,12 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - **Validates: Requirements 3.1**
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 7: detail page valid id`
 
-  - [-] 3.3 Tambahkan tombol "Pesan Jasa" di halaman detail dengan `onClick={() => alert("Fitur pemesanan akan tersedia di V4")}`.
+  - [x] 3.3 Tambahkan tombol "Pesan Jasa" di halaman detail dengan `onClick={() => alert("Fitur pemesanan akan tersedia di V4")}`.
     - _Requirements: 3.3, 3.4_
     - _Commit: "V2: Tombol Pesan Jasa - Tambahkan tombol dengan alert placeholder di halaman detail"_
 
 - [ ] 4. Navigasi dan penyempurnaan
-  - [~] 4.1 Verifikasi semua tombol "Lihat Detail" di `/services` mengarah ke halaman detail yang benar. Pastikan `href` di setiap `ProductCard` sesuai dengan `id` produk yang dirender.
+  - [-] 4.1 Verifikasi semua tombol "Lihat Detail" di `/services` mengarah ke halaman detail yang benar. Pastikan `href` di setiap `ProductCard` sesuai dengan `id` produk yang dirender.
     - _Requirements: 2.6_
     - _Commit: "V2: Verifikasi navigasi detail - Pastikan semua link Lihat Detail mengarah ke id yang benar"_
 
