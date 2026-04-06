@@ -34,7 +34,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - _Requirements: 2.1_
     - _Commit: "V2: Services page heading - Import data produk dan tampilkan judul halaman"_
 
-  - [-] 2.2 Buat komponen `components/ProductCard.tsx` dengan props `{ product: Product }`. Render gambar (`<img>`), nama, deskripsiSingkat. Buat grid responsif di `app/services/page.tsx`: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`. Map `products` → `<ProductCard />`.
+  - [x] 2.2 Buat komponen `components/ProductCard.tsx` dengan props `{ product: Product }`. Render gambar (`<img>`), nama, deskripsiSingkat. Buat grid responsif di `app/services/page.tsx`: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`. Map `products` → `<ProductCard />`.
     - _Requirements: 2.2, 2.3, 2.4_
     - _Commit: "V2: ProductCard dan grid - Buat komponen ProductCard dan grid responsif di /services"_
 
@@ -50,7 +50,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - **Validates: Requirements 2.2**
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 6: semua produk dirender`
 
-  - [~] 2.3 Tambahkan tombol "Lihat Detail" di `ProductCard` menggunakan `next/link` dengan `href={/product/${product.id}}`.
+  - [-] 2.3 Tambahkan tombol "Lihat Detail" di `ProductCard` menggunakan `next/link` dengan `href={/product/${product.id}}`.
     - _Requirements: 2.5, 2.6_
     - _Commit: "V2: Tombol Lihat Detail - Tambahkan Link ke /product/[id] di ProductCard"_
 
