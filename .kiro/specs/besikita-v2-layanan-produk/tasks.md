@@ -55,7 +55,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - _Commit: "V2: Tombol Lihat Detail - Tambahkan Link ke /product/[id] di ProductCard"_
 
 - [ ] 3. Halaman detail produk
-  - [-] 3.1 Buat `app/product/[id]/page.tsx` dengan dynamic routing. Terima `params: { id: string }`. Cari produk dengan `products.find(p => p.id === params.id)`. Jika tidak ditemukan, render pesan "Produk tidak ditemukan".
+  - [x] 3.1 Buat `app/product/[id]/page.tsx` dengan dynamic routing. Terima `params: { id: string }`. Cari produk dengan `products.find(p => p.id === params.id)`. Jika tidak ditemukan, render pesan "Produk tidak ditemukan".
     - _Requirements: 3.2_
     - _Commit: "V2: Detail page routing - Buat halaman /product/[id] dengan dynamic routing dan not-found handling"_
 
@@ -65,7 +65,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - **Validates: Requirements 3.2**
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 8: detail page invalid id`
 
-  - [~] 3.2 Tampilkan detail lengkap produk: gambar, nama, kategori, deskripsiPanjang, dimensiContoh, dan hargaDasar (format Rupiah).
+  - [-] 3.2 Tampilkan detail lengkap produk: gambar, nama, kategori, deskripsiPanjang, dimensiContoh, dan hargaDasar (format Rupiah).
     - _Requirements: 3.1_
     - _Commit: "V2: Detail produk lengkap - Tampilkan semua field produk di halaman detail"_
 
