@@ -10,3 +10,15 @@ export interface AdvantageItem {
   title: string;
   description: string;
 }
+
+export interface Product {
+  id: string;
+  nama: string;
+  slug: string;
+  kategori: string;
+  deskripsiSingkat: string;
+  deskripsiPanjang: string;
+  gambar: string;
+  hargaDasar: number;
+  dimensiContoh: string;
+}
