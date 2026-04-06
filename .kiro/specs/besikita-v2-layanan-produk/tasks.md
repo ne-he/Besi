@@ -30,11 +30,11 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 4: distribusi kategori`
 
 - [ ] 2. Halaman /services
-  - [-] 2.1 Update `app/services/page.tsx`. Import array `products` dari `data/products.ts`. Render heading `<h1>Layanan Olah Besi Kami</h1>` di bagian atas halaman.
+  - [x] 2.1 Update `app/services/page.tsx`. Import array `products` dari `data/products.ts`. Render heading `<h1>Layanan Olah Besi Kami</h1>` di bagian atas halaman.
     - _Requirements: 2.1_
     - _Commit: "V2: Services page heading - Import data produk dan tampilkan judul halaman"_
 
-  - [~] 2.2 Buat komponen `components/ProductCard.tsx` dengan props `{ product: Product }`. Render gambar (`<img>`), nama, deskripsiSingkat. Buat grid responsif di `app/services/page.tsx`: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`. Map `products` → `<ProductCard />`.
+  - [-] 2.2 Buat komponen `components/ProductCard.tsx` dengan props `{ product: Product }`. Render gambar (`<img>`), nama, deskripsiSingkat. Buat grid responsif di `app/services/page.tsx`: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`. Map `products` → `<ProductCard />`.
     - _Requirements: 2.2, 2.3, 2.4_
     - _Commit: "V2: ProductCard dan grid - Buat komponen ProductCard dan grid responsif di /services"_
 

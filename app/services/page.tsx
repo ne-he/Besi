@@ -1,4 +1,5 @@
 import { products } from "@/data/products";
+import ProductCard from "@/components/ProductCard";
 
 export default function ServicesPage() {
   return (
@@ -6,8 +7,11 @@ export default function ServicesPage() {
       <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">
         Layanan Olah Besi Kami
       </h1>
-      {/* Grid produk akan ditambahkan di task 2.2 */}
-      <p className="text-gray-500 text-center">Memuat {products.length} produk...</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
     </div>
   );
 }
