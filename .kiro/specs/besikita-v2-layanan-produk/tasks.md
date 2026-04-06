@@ -65,7 +65,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - **Validates: Requirements 3.2**
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 8: detail page invalid id`
 
-  - [-] 3.2 Tampilkan detail lengkap produk: gambar, nama, kategori, deskripsiPanjang, dimensiContoh, dan hargaDasar (format Rupiah).
+  - [x] 3.2 Tampilkan detail lengkap produk: gambar, nama, kategori, deskripsiPanjang, dimensiContoh, dan hargaDasar (format Rupiah).
     - _Requirements: 3.1_
     - _Commit: "V2: Detail produk lengkap - Tampilkan semua field produk di halaman detail"_
 
@@ -75,7 +75,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama (10 subtask), setia
     - **Validates: Requirements 3.1**
     - Tag: `// Feature: besikita-v2-layanan-produk, Property 7: detail page valid id`
 
-  - [~] 3.3 Tambahkan tombol "Pesan Jasa" di halaman detail dengan `onClick={() => alert("Fitur pemesanan akan tersedia di V4")}`.
+  - [-] 3.3 Tambahkan tombol "Pesan Jasa" di halaman detail dengan `onClick={() => alert("Fitur pemesanan akan tersedia di V4")}`.
     - _Requirements: 3.3, 3.4_
     - _Commit: "V2: Tombol Pesan Jasa - Tambahkan tombol dengan alert placeholder di halaman detail"_
 

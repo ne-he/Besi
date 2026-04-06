@@ -1,5 +1,6 @@
 import { products } from "@/data/products";
 import Link from "next/link";
+import PesanJasaButton from "@/components/PesanJasaButton";
 
 interface Props {
   params: { id: string };
@@ -53,6 +54,7 @@ export default function ProductDetailPage({ params }: Props) {
               </span>
             </div>
           </div>
+          <PesanJasaButton />
         </div>
       </div>
     </div>
