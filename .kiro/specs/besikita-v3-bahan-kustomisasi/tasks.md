@@ -32,7 +32,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - Sertakan unit test untuk nilai konkret (Req 2.3, 2.4, 2.5)
 
 - [ ] 2. Komponen selector
-  - [-] 2.1 Buat `components/MaterialSelector.tsx` (Client Component)
+  - [x] 2.1 Buat `components/MaterialSelector.tsx` (Client Component)
     - Tambahkan `"use client"` directive
     - Terima props `selectedMaterial: Material` dan `onMaterialChange: (m: Material) => void`
     - Render semua material dari `data/materials.ts` sebagai tombol radio-style
@@ -47,7 +47,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - **Property 5: MaterialSelector Menandai Pilihan Aktif** — hanya satu tombol aktif sesuai `selectedMaterial.id`
     - **Validates: Requirements 3.2, 3.3, 3.4, 3.5**
 
-  - [~] 2.3 Buat `components/ThicknessSelector.tsx` (Client Component)
+  - [-] 2.3 Buat `components/ThicknessSelector.tsx` (Client Component)
     - Tambahkan `"use client"` directive
     - Terima props `selectedThickness: ThicknessOption` dan `onThicknessChange: (t: ThicknessOption) => void`
     - Render semua opsi dari `data/thickness.ts` sebagai tombol radio-style
