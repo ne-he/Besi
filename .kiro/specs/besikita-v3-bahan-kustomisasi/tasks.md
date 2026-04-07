@@ -7,7 +7,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
 ## Tasks
 
 - [ ] 1. Data bahan besi
-  - [-] 1.1 Buat `data/materials.ts` dengan tipe `Material` dan array `materials` (3 item)
+  - [x] 1.1 Buat `data/materials.ts` dengan tipe `Material` dan array `materials` (3 item)
     - Definisikan interface `Material` dengan field `id`, `nama`, `hargaTambahanPerUnit`, `satuan`
     - Ekspor array `materials` berisi Hollow Hitam (50000), Hollow Galvanis (75000), Siku Besi (40000)
     - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6_
@@ -19,7 +19,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - **Validates: Requirements 1.1, 1.2, 1.6**
     - Sertakan unit test untuk nilai konkret (Req 1.3, 1.4, 1.5)
 
-  - [~] 1.3 Buat `data/thickness.ts` dengan tipe `ThicknessOption` dan array `thicknessOptions` (3 item)
+  - [-] 1.3 Buat `data/thickness.ts` dengan tipe `ThicknessOption` dan array `thicknessOptions` (3 item)
     - Definisikan interface `ThicknessOption` dengan field `id`, `label`, `hargaTambahan`
     - Ekspor array `thicknessOptions` berisi 1.2mm (0), 1.5mm (25000), 2.0mm (50000)
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6_
