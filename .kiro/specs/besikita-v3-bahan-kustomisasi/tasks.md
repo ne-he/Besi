@@ -19,7 +19,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - **Validates: Requirements 1.1, 1.2, 1.6**
     - Sertakan unit test untuk nilai konkret (Req 1.3, 1.4, 1.5)
 
-  - [-] 1.3 Buat `data/thickness.ts` dengan tipe `ThicknessOption` dan array `thicknessOptions` (3 item)
+  - [x] 1.3 Buat `data/thickness.ts` dengan tipe `ThicknessOption` dan array `thicknessOptions` (3 item)
     - Definisikan interface `ThicknessOption` dengan field `id`, `label`, `hargaTambahan`
     - Ekspor array `thicknessOptions` berisi 1.2mm (0), 1.5mm (25000), 2.0mm (50000)
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6_
@@ -32,7 +32,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - Sertakan unit test untuk nilai konkret (Req 2.3, 2.4, 2.5)
 
 - [ ] 2. Komponen selector
-  - [~] 2.1 Buat `components/MaterialSelector.tsx` (Client Component)
+  - [-] 2.1 Buat `components/MaterialSelector.tsx` (Client Component)
     - Tambahkan `"use client"` directive
     - Terima props `selectedMaterial: Material` dan `onMaterialChange: (m: Material) => void`
     - Render semua material dari `data/materials.ts` sebagai tombol radio-style
