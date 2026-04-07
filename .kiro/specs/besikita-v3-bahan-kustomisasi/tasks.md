@@ -66,7 +66,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
   - Jalankan `vitest --run` dan pastikan semua test data dan selector lulus sebelum lanjut ke integrasi.
 
 - [ ] 4. Integrasi ke halaman detail
-  - [~] 4.1 Buat `components/ProductDetailClient.tsx` (Client Component wrapper dengan state)
+  - [x] 4.1 Buat `components/ProductDetailClient.tsx` (Client Component wrapper dengan state)
     - Tambahkan `"use client"` directive
     - Terima props `product: Product`
     - Inisialisasi state `selectedMaterial` dengan `materials[0]` dan `selectedThickness` dengan `thicknessOptions[0]`
@@ -74,14 +74,14 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - _Requirements: 5.3, 5.4, 7.2_
     - Git commit: `V3: ProductDetailClient.tsx - wrapper client component dengan state kustomisasi`
 
-  - [~] 4.2 Tampilkan `MaterialSelector` dan `ThicknessSelector` di `ProductDetailClient`
+  - [x] 4.2 Tampilkan `MaterialSelector` dan `ThicknessSelector` di `ProductDetailClient`
     - Render `MaterialSelector` di bawah deskripsi produk dan sebelum tampilan harga
     - Render `ThicknessSelector` di bawah `MaterialSelector` dan sebelum tampilan harga
     - Hubungkan `onChange` handler ke state `selectedMaterial` dan `selectedThickness`
     - _Requirements: 5.1, 5.2, 4.1, 4.3_
     - Git commit: `V3: ProductDetailClient - tampilkan MaterialSelector dan ThicknessSelector`
 
-  - [~] 4.3 Hitung dan tampilkan harga total realtime
+  - [x] 4.3 Hitung dan tampilkan harga total realtime
     - Hitung `hargaTotal = product.hargaDasar + selectedMaterial.hargaTambahanPerUnit + selectedThickness.hargaTambahan`
     - Tampilkan `hargaTotal` yang diformat dengan `toLocaleString("id-ID")`
     - Tampilkan Price Breakdown: "Harga dasar", "+ Bahan", "+ Ketebalan", "Total"
@@ -95,20 +95,20 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - **Validates: Requirements 6.1, 6.3, 6.4**
 
 - [ ] 5. State dan realtime update
-  - [~] 5.1 Pastikan `onChange` handler update state realtime
+  - [x] 5.1 Pastikan `onChange` handler update state realtime
     - Verifikasi bahwa perubahan `selectedMaterial` atau `selectedThickness` langsung memperbarui `hargaTotal` tanpa reload
     - Pastikan tidak ada stale state atau closure issue pada handler
     - _Requirements: 6.1, 6.2_
     - Git commit: `V3: ProductDetailClient - verifikasi onChange handler update state realtime`
 
-  - [~] 5.2 Ganti tombol "Pesan Jasa" menjadi tombol "Simpan Pilihan"
+  - [x] 5.2 Ganti tombol "Pesan Jasa" menjadi tombol "Simpan Pilihan"
     - Hapus atau ganti `PesanJasaButton` dengan tombol "Simpan Pilihan" di `ProductDetailClient`
     - Saat diklik, simpan `{ material: selectedMaterial, thickness: selectedThickness }` ke state `savedSelection`
     - Tampilkan `alert("Pilihan disimpan sementara")` setelah menyimpan
     - _Requirements: 7.1, 7.2, 7.3_
     - Git commit: `V3: ProductDetailClient - ganti PesanJasaButton dengan SimpanPilihan`
 
-  - [~] 5.3 Tambahkan Price Breakdown (rincian harga)
+  - [x] 5.3 Tambahkan Price Breakdown (rincian harga)
     - Pastikan Price Breakdown sudah terintegrasi dan tampil dengan benar di bawah selector
     - Format: "Harga dasar: Rp X", "+ Bahan: Rp Y", "+ Ketebalan: Rp Z", "Total: Rp [hargaTotal]"
     - _Requirements: 6.3, 6.4_
@@ -120,7 +120,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - Sertakan unit test: tombol "Simpan Pilihan" ada di halaman (Req 7.1), klik menampilkan alert (Req 7.3)
 
 - [ ] 6. Wire ke `app/product/[id]/page.tsx`
-  - [~] 6.1 Update `page.tsx` untuk menggunakan `ProductDetailClient`
+  - [-] 6.1 Update `page.tsx` untuk menggunakan `ProductDetailClient`
     - Pertahankan `page.tsx` sebagai Server Component
     - Teruskan data `product` ke `ProductDetailClient` sebagai props
     - Pastikan halaman detail merender `ProductDetailClient` sebagai pengganti tampilan lama
