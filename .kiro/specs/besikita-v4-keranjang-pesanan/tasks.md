@@ -97,7 +97,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Commit: `git add . && git commit -m "V4: 4.2 ProductDetailClient - link Lihat Keranjang"`
 
 - [ ] 5. Halaman /cart — struktur dasar dan empty state
-  - [ ] 5.1 Buat `app/cart/page.tsx` dengan empty state
+  - [x] 5.1 Buat `app/cart/page.tsx` dengan empty state
     - Tambahkan `"use client"` directive
     - Import `getCart`, `CartItem` dari `@/utils/cart`
     - Inisialisasi state `const [cart, setCart] = useState<CartItem[]>([])`
@@ -108,7 +108,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Commit: `git add . && git commit -m "V4: 5.1 cart/page.tsx - struktur dasar dan empty state"`
 
 - [ ] 6. Halaman /cart — daftar item dan total harga
-  - [~] 6.1 Tampilkan tabel/daftar item keranjang di `app/cart/page.tsx`
+  - [-] 6.1 Tampilkan tabel/daftar item keranjang di `app/cart/page.tsx`
     - Render daftar `CartItem` dengan kolom: `productName`, `materialName`, `thickness`, input number `quantity` (min=1), `subtotal` diformat `toLocaleString("id-ID")`, tombol hapus per item (ikon tempat sampah atau teks "Hapus")
     - Implementasikan handler `handleRemove(id)` → `removeFromCart(id)` → `setCart(getCart())`
     - _Requirements: 3.5, 4.5, 5.4_
