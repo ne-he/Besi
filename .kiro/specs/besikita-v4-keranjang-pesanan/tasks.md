@@ -91,13 +91,13 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - _Requirements: 2.1, 2.2_
     - Commit: `git add . && git commit -m "V4: 4.1 ProductDetailClient - addToCart saat Simpan Pilihan"`
 
-  - [-] 4.2 Tambahkan link "Lihat Keranjang" di `ProductDetailClient` setelah produk ditambahkan
+  - [x] 4.2 Tambahkan link "Lihat Keranjang" di `ProductDetailClient` setelah produk ditambahkan
     - Saat `addedToCart === true`, tampilkan link `<Link href="/cart">Lihat Keranjang →</Link>` di bawah notifikasi
     - _Requirements: 2.3_
     - Commit: `git add . && git commit -m "V4: 4.2 ProductDetailClient - link Lihat Keranjang"`
 
 - [ ] 5. Halaman /cart — struktur dasar dan empty state
-  - [~] 5.1 Buat `app/cart/page.tsx` dengan empty state
+  - [ ] 5.1 Buat `app/cart/page.tsx` dengan empty state
     - Tambahkan `"use client"` directive
     - Import `getCart`, `CartItem` dari `@/utils/cart`
     - Inisialisasi state `const [cart, setCart] = useState<CartItem[]>([])`
