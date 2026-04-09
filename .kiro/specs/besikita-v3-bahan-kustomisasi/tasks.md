@@ -120,7 +120,7 @@ Implementasi dilakukan secara incremental dalam 4 task utama dan 10 subtask. Set
     - Sertakan unit test: tombol "Simpan Pilihan" ada di halaman (Req 7.1), klik menampilkan alert (Req 7.3)
 
 - [ ] 6. Wire ke `app/product/[id]/page.tsx`
-  - [-] 6.1 Update `page.tsx` untuk menggunakan `ProductDetailClient`
+  - [x] 6.1 Update `page.tsx` untuk menggunakan `ProductDetailClient`
     - Pertahankan `page.tsx` sebagai Server Component
     - Teruskan data `product` ke `ProductDetailClient` sebagai props
     - Pastikan halaman detail merender `ProductDetailClient` sebagai pengganti tampilan lama
