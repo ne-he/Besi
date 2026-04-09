@@ -83,7 +83,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
   - Tanya user jika ada pertanyaan sebelum melanjutkan
 
 - [ ] 4. Integrasi "Simpan Pilihan" dari halaman detail ke keranjang
-  - [ ] 4.1 Modifikasi `components/ProductDetailClient.tsx` — hubungkan ke `addToCart`
+  - [x] 4.1 Modifikasi `components/ProductDetailClient.tsx` — hubungkan ke `addToCart`
     - Import `addToCart` dari `@/utils/cart`
     - Tambahkan state `addedToCart: boolean` (default `false`)
     - Ubah `handleSimpanPilihan`: panggil `addToCart({ id: crypto.randomUUID(), productId: product.id, productName: product.nama, materialName: selectedMaterial.nama, thickness: selectedThickness.label, quantity: 1, pricePerUnit: hargaTotal })`, lalu `setAddedToCart(true)`
@@ -91,7 +91,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - _Requirements: 2.1, 2.2_
     - Commit: `git add . && git commit -m "V4: 4.1 ProductDetailClient - addToCart saat Simpan Pilihan"`
 
-  - [~] 4.2 Tambahkan link "Lihat Keranjang" di `ProductDetailClient` setelah produk ditambahkan
+  - [-] 4.2 Tambahkan link "Lihat Keranjang" di `ProductDetailClient` setelah produk ditambahkan
     - Saat `addedToCart === true`, tampilkan link `<Link href="/cart">Lihat Keranjang →</Link>` di bawah notifikasi
     - _Requirements: 2.3_
     - Commit: `git add . && git commit -m "V4: 4.2 ProductDetailClient - link Lihat Keranjang"`
