@@ -64,7 +64,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Generate cart → `clearCart()` → `getCart()` = `[]`
 
 - [ ] 2. Tambahkan `updateQuantity` ke `utils/cart.ts`
-  - [-] 2.1 Implementasikan `updateQuantity(id: string, newQuantity: number): CartItem[]`
+  - [x] 2.1 Implementasikan `updateQuantity(id: string, newQuantity: number): CartItem[]`
     - Cari item berdasarkan `id`
     - Ubah `quantity` menjadi `newQuantity`, hitung ulang `subtotal = pricePerUnit * newQuantity`
     - Jika `newQuantity < 1`, tidak lakukan perubahan (return cart saat ini)
@@ -83,7 +83,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
   - Tanya user jika ada pertanyaan sebelum melanjutkan
 
 - [ ] 4. Integrasi "Simpan Pilihan" dari halaman detail ke keranjang
-  - [~] 4.1 Modifikasi `components/ProductDetailClient.tsx` — hubungkan ke `addToCart`
+  - [ ] 4.1 Modifikasi `components/ProductDetailClient.tsx` — hubungkan ke `addToCart`
     - Import `addToCart` dari `@/utils/cart`
     - Tambahkan state `addedToCart: boolean` (default `false`)
     - Ubah `handleSimpanPilihan`: panggil `addToCart({ id: crypto.randomUUID(), productId: product.id, productName: product.nama, materialName: selectedMaterial.nama, thickness: selectedThickness.label, quantity: 1, pricePerUnit: hargaTotal })`, lalu `setAddedToCart(true)`

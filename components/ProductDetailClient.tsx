@@ -7,6 +7,7 @@ import { Material, materials } from "@/data/materials";
 import { ThicknessOption, thicknessOptions } from "@/data/thickness";
 import MaterialSelector from "@/components/MaterialSelector";
 import ThicknessSelector from "@/components/ThicknessSelector";
+import { addToCart } from "@/utils/cart";
 
 interface ProductDetailClientProps {
   product: Product;
@@ -15,10 +16,7 @@ interface ProductDetailClientProps {
 export default function ProductDetailClient({ product }: ProductDetailClientProps) {
   const [selectedMaterial, setSelectedMaterial] = useState<Material>(materials[0]);
   const [selectedThickness, setSelectedThickness] = useState<ThicknessOption>(thicknessOptions[0]);
-  const [savedSelection, setSavedSelection] = useState<{
-    material: Material;
-    thickness: ThicknessOption;
-  } | null>(null);
+  const [addedToCart, setAddedToCart] = useState(false);
 
   const hargaTotal =
     product.hargaDasar +
@@ -26,8 +24,16 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
     selectedThickness.hargaTambahan;
 
   const handleSimpanPilihan = () => {
-    setSavedSelection({ material: selectedMaterial, thickness: selectedThickness });
-    alert("Pilihan disimpan sementara");
+    addToCart({
+      id: crypto.randomUUID(),
+      productId: product.id,
+      productName: product.nama,
+      materialName: selectedMaterial.nama,
+      thickness: selectedThickness.label,
+      quantity: 1,
+      pricePerUnit: hargaTotal,
+    });
+    setAddedToCart(true);
   };
 
   return (
@@ -93,6 +99,16 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
             <span>Dimensi Contoh</span>
             <span className="font-medium text-gray-800">{product.dimensiContoh}</span>
           </div>
+
+          {/* Notifikasi addToCart */}
+          {addedToCart && (
+            <div className="bg-green-50 border border-green-200 text-green-800 text-sm rounded-lg px-4 py-3 flex items-center justify-between">
+              <span>Produk ditambahkan ke keranjang</span>
+              <Link href="/cart" className="font-semibold underline ml-2">
+                Lihat Keranjang →
+              </Link>
+            </div>
+          )}
 
           {/* Simpan Pilihan Button */}
           <button
