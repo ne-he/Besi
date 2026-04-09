@@ -7,7 +7,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
 ## Tasks
 
 - [ ] 1. Struktur data keranjang dan fungsi localStorage
-  - [-] 1.1 Buat `utils/cart.ts` — definisikan tipe dan fungsi baca
+  - [x] 1.1 Buat `utils/cart.ts` — definisikan tipe dan fungsi baca
     - Buat file `utils/cart.ts`
     - Definisikan dan ekspor interface `CartItem` dengan field: `id`, `productId`, `productName`, `materialName`, `thickness`, `quantity`, `pricePerUnit`, `subtotal`
     - Implementasikan dan ekspor `getCart(): CartItem[]` — baca dari `localStorage["besikita_cart"]`, return `[]` jika tidak ada atau parse error (try/catch)
@@ -23,7 +23,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Gunakan `fc.array(cartItemArb)` → `saveCart` → `getCart` → deep equal
     - Minimum 100 iterasi
 
-  - [~] 1.2 Tambahkan `addToCart`, `removeFromCart`, `clearCart` ke `utils/cart.ts`
+  - [-] 1.2 Tambahkan `addToCart`, `removeFromCart`, `clearCart` ke `utils/cart.ts`
     - Implementasikan `addToCart(item: Omit<CartItem, 'subtotal'>): void`
       - Hitung `subtotal = pricePerUnit * quantity`
       - Cek duplikat via `productId + materialName + thickness`; jika ada → tambah quantity dan hitung ulang subtotal; jika tidak → push item baru dengan `id = crypto.randomUUID()`
