@@ -23,7 +23,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Gunakan `fc.array(cartItemArb)` → `saveCart` → `getCart` → deep equal
     - Minimum 100 iterasi
 
-  - [-] 1.2 Tambahkan `addToCart`, `removeFromCart`, `clearCart` ke `utils/cart.ts`
+  - [x] 1.2 Tambahkan `addToCart`, `removeFromCart`, `clearCart` ke `utils/cart.ts`
     - Implementasikan `addToCart(item: Omit<CartItem, 'subtotal'>): void`
       - Hitung `subtotal = pricePerUnit * quantity`
       - Cek duplikat via `productId + materialName + thickness`; jika ada → tambah quantity dan hitung ulang subtotal; jika tidak → push item baru dengan `id = crypto.randomUUID()`
@@ -64,7 +64,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Generate cart → `clearCart()` → `getCart()` = `[]`
 
 - [ ] 2. Tambahkan `updateQuantity` ke `utils/cart.ts`
-  - [~] 2.1 Implementasikan `updateQuantity(id: string, newQuantity: number): CartItem[]`
+  - [-] 2.1 Implementasikan `updateQuantity(id: string, newQuantity: number): CartItem[]`
     - Cari item berdasarkan `id`
     - Ubah `quantity` menjadi `newQuantity`, hitung ulang `subtotal = pricePerUnit * newQuantity`
     - Jika `newQuantity < 1`, tidak lakukan perubahan (return cart saat ini)
