@@ -114,7 +114,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - _Requirements: 3.5, 4.5, 5.4_
     - Commit: `git add . && git commit -m "V4: 6.1 cart/page.tsx - daftar item dan tombol hapus"`
 
-  - [-] 6.2 Tambahkan total harga, tombol kosongkan, dan tombol lanjutkan di `app/cart/page.tsx`
+  - [x] 6.2 Tambahkan total harga, tombol kosongkan, dan tombol lanjutkan di `app/cart/page.tsx`
     - Hitung `totalHarga = cart.reduce((sum, item) => sum + item.subtotal, 0)`
     - Tampilkan `totalHarga` diformat `toLocaleString("id-ID")` di bagian bawah daftar
     - Implementasikan handler `handleClear()` → `clearCart()` → `setCart([])`
@@ -130,7 +130,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Generate array `CartItem` → `total = cart.reduce((sum, item) => sum + item.subtotal, 0)` → verifikasi konsistensi
 
 - [ ] 7. Penyempurnaan cart — update quantity real-time
-  - [~] 7.1 Hubungkan input quantity ke `updateQuantity` di `app/cart/page.tsx`
+  - [-] 7.1 Hubungkan input quantity ke `updateQuantity` di `app/cart/page.tsx`
     - Implementasikan handler `handleQuantityChange(id: string, qty: number)` → `setCart(updateQuantity(id, qty))`
     - Pasang `onChange` pada input number setiap item yang memanggil `handleQuantityChange`
     - Pastikan perubahan quantity memicu re-render `subtotal` per item dan `totalHarga`
