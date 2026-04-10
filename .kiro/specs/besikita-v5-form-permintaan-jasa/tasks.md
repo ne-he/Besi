@@ -14,7 +14,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - _Requirements: 1.1, 1.2, 1.3_
     - Commit: `git add . && git commit -m "V5: 1.1 Skeleton halaman /request dan link Navbar Custom Order"`
 
-  - [-] 1.2 Buat form dasar dengan useState untuk field identitas
+  - [x] 1.2 Buat form dasar dengan useState untuk field identitas
     - Tambahkan state `nama`, `email`, `telepon` dengan `useState`
     - Render tiga field: input text "Nama Lengkap", input email "Email", input tel "Nomor Telepon"
     - Styling Tailwind: label, input dengan border/rounded/focus ring, layout vertikal
@@ -22,7 +22,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Commit: `git add . && git commit -m "V5: 1.2 Form dasar field identitas (nama, email, telepon)"`
 
 - [ ] 2. Field jenis barang dan ukuran
-  - [~] 2.1 Tambahkan field select jenis barang dengan conditional field
+  - [-] 2.1 Tambahkan field select jenis barang dengan conditional field
     - Tambahkan state `jenisBarang` dan `lainnyaJikaAda`
     - Render dropdown select "Jenis Barang" dengan opsi: "Kursi Besi", "Pagar Besi", "Kanopi", "Lainnya"
     - Tampilkan field input teks "Sebutkan jenis barang" hanya jika `jenisBarang === "Lainnya"`
