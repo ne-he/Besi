@@ -142,7 +142,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
   - Tanya user jika ada pertanyaan sebelum melanjutkan
 
 - [ ] 9. Navigasi keranjang di Navbar
-  - [-] 9.1 Modifikasi `components/Navbar.tsx` — tambahkan link dan Cart_Badge
+  - [x] 9.1 Modifikasi `components/Navbar.tsx` — tambahkan link dan Cart_Badge
     - Tambahkan `"use client"` directive
     - Import `getCart` dari `@/utils/cart`
     - Tambahkan state `const [cartCount, setCartCount] = useState(0)`
