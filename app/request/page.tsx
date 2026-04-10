@@ -14,6 +14,19 @@ export default function RequestPage() {
   const [tinggi, setTinggi] = useState<number | "">("");
   const [bahan, setBahan] = useState("vendor");
   const [catatan, setCatatan] = useState("");
+  const [imagePreview, setImagePreview] = useState<string | null>(null);
+
+  function handleImageChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (ev) => setImagePreview(ev.target?.result as string);
+      reader.onerror = () => setImagePreview(null);
+      reader.readAsDataURL(file);
+    } else {
+      setImagePreview(null);
+    }
+  }
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-12">
@@ -184,8 +197,12 @@ export default function RequestPage() {
           <input
             type="file"
             accept="image/*"
+            onChange={handleImageChange}
             className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400 text-slate-600 file:mr-3 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-medium file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100"
           />
+          {imagePreview !== null && (
+            <img src={imagePreview} width={100} alt="Preview" className="rounded mt-2" />
+          )}
         </div>
       </form>
     </main>
