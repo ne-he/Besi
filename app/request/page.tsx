@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { materials } from "@/data/materials";
 
 export default function RequestPage() {
   const [nama, setNama] = useState("");
@@ -11,6 +12,7 @@ export default function RequestPage() {
   const [panjang, setPanjang] = useState<number | "">("");
   const [lebar, setLebar] = useState<number | "">("");
   const [tinggi, setTinggi] = useState<number | "">("");
+  const [bahan, setBahan] = useState("vendor");
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-12">
@@ -139,6 +141,24 @@ export default function RequestPage() {
               className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
           </div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <label className="text-sm font-medium text-slate-700">
+            Pilihan Bahan Besi
+          </label>
+          <select
+            value={bahan}
+            onChange={(e) => setBahan(e.target.value)}
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400 bg-white"
+          >
+            <option value="vendor">Sesuai rekomendasi vendor</option>
+            {materials.map((material) => (
+              <option key={material.id} value={material.id}>
+                {material.nama}
+              </option>
+            ))}
+          </select>
         </div>
       </form>
     </main>
