@@ -317,6 +317,7 @@ export default function RequestPage() {
               setCatatan("");
               setImagePreview(null);
               setErrors({});
+              setSuccessMessage("");
             }}
             className="border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold px-6 py-2 rounded-lg transition-colors"
           >
