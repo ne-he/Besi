@@ -44,7 +44,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - _Requirements: 5.1, 5.2, 5.3_
     - Commit: `git add . && git commit -m "V5: 3.1 Dropdown pilihan bahan besi dari data/materials.ts"`
 
-  - [-] 3.2 Tambahkan textarea catatan dan input file gambar referensi
+  - [x] 3.2 Tambahkan textarea catatan dan input file gambar referensi
     - Tambahkan state `catatan`
     - Render textarea "Catatan Tambahan" (opsional, tidak wajib)
     - Render input file "Upload Gambar Referensi" dengan `accept="image/*"` (opsional)
@@ -52,7 +52,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Commit: `git add . && git commit -m "V5: 3.2 Textarea catatan dan input file gambar referensi"`
 
 - [ ] 4. Validasi, preview gambar, dan submit
-  - [~] 4.1 Buat utils/requests.ts dengan fungsi validate, buildRequestObject, saveRequest, getRequests
+  - [-] 4.1 Buat utils/requests.ts dengan fungsi validate, buildRequestObject, saveRequest, getRequests
     - Tambahkan interface `RequestObject` ke `types/index.ts` (id, nama, email, telepon, jenisBarang, lainnyaJikaAda, panjang, lebar, tinggi, bahan, catatan, gambarPreview, status: "baru", createdAt)
     - Buat `utils/requests.ts` dengan export: `FormState`, `FormErrors`, `validate()`, `buildRequestObject()`, `saveRequest()`, `getRequests()`
     - `validate()` mengembalikan semua error sekaligus (tidak berhenti di error pertama)

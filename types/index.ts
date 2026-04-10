@@ -22,3 +22,20 @@ export interface Product {
   hargaDasar: number;
   dimensiContoh: string;
 }
+
+export interface RequestObject {
+  id: string;
+  nama: string;
+  email: string;
+  telepon: string;
+  jenisBarang: string;
+  lainnyaJikaAda: string;
+  panjang: number;
+  lebar: number;
+  tinggi: number;
+  bahan: string;
+  catatan: string;
+  gambarPreview: string | null;
+  status: "baru";
+  createdAt: string;
+}
