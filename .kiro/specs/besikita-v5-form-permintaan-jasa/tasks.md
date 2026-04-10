@@ -37,14 +37,14 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Commit: `git add . && git commit -m "V5: 2.2 Field ukuran panjang/lebar/tinggi grid 3 kolom"`
 
 - [ ] 3. Bahan dan catatan
-  - [-] 3.1 Tambahkan dropdown pilihan bahan besi dari data/materials.ts
+  - [x] 3.1 Tambahkan dropdown pilihan bahan besi dari data/materials.ts
     - Tambahkan state `bahan` dengan nilai default `"vendor"`
     - Import `materials` dari `data/materials.ts`
     - Render dropdown "Pilihan Bahan Besi": opsi pertama "Sesuai rekomendasi vendor" (value `"vendor"`), diikuti semua item dari `materials` (value = `material.id`, label = `material.nama`)
     - _Requirements: 5.1, 5.2, 5.3_
     - Commit: `git add . && git commit -m "V5: 3.1 Dropdown pilihan bahan besi dari data/materials.ts"`
 
-  - [~] 3.2 Tambahkan textarea catatan dan input file gambar referensi
+  - [-] 3.2 Tambahkan textarea catatan dan input file gambar referensi
     - Tambahkan state `catatan`
     - Render textarea "Catatan Tambahan" (opsional, tidak wajib)
     - Render input file "Upload Gambar Referensi" dengan `accept="image/*"` (opsional)

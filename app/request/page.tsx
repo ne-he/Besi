@@ -13,6 +13,7 @@ export default function RequestPage() {
   const [lebar, setLebar] = useState<number | "">("");
   const [tinggi, setTinggi] = useState<number | "">("");
   const [bahan, setBahan] = useState("vendor");
+  const [catatan, setCatatan] = useState("");
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-12">
@@ -159,6 +160,32 @@ export default function RequestPage() {
               </option>
             ))}
           </select>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <label className="text-sm font-medium text-slate-700">
+            Catatan Tambahan{" "}
+            <span className="text-slate-400 font-normal">(opsional)</span>
+          </label>
+          <textarea
+            rows={4}
+            value={catatan}
+            onChange={(e) => setCatatan(e.target.value)}
+            placeholder="Deskripsikan detail tambahan..."
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400 resize-none"
+          />
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <label className="text-sm font-medium text-slate-700">
+            Upload Gambar Referensi{" "}
+            <span className="text-slate-400 font-normal">(opsional)</span>
+          </label>
+          <input
+            type="file"
+            accept="image/*"
+            className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400 text-slate-600 file:mr-3 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-medium file:bg-orange-50 file:text-orange-700 hover:file:bg-orange-100"
+          />
         </div>
       </form>
     </main>
