@@ -8,6 +8,9 @@ export default function RequestPage() {
   const [telepon, setTelepon] = useState("");
   const [jenisBarang, setJenisBarang] = useState("");
   const [lainnyaJikaAda, setLainnyaJikaAda] = useState("");
+  const [panjang, setPanjang] = useState<number | "">("");
+  const [lebar, setLebar] = useState<number | "">("");
+  const [tinggi, setTinggi] = useState<number | "">("");
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-12">
@@ -92,6 +95,51 @@ export default function RequestPage() {
             />
           </div>
         )}
+
+        <div className="grid grid-cols-3 gap-4">
+          <div className="flex flex-col gap-1">
+            <label className="text-sm font-medium text-slate-700">
+              Panjang (cm)
+            </label>
+            <input
+              type="number"
+              min={1}
+              value={panjang}
+              onChange={(e) =>
+                setPanjang(e.target.value === "" ? "" : Number(e.target.value))
+              }
+              className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-sm font-medium text-slate-700">
+              Lebar (cm)
+            </label>
+            <input
+              type="number"
+              min={1}
+              value={lebar}
+              onChange={(e) =>
+                setLebar(e.target.value === "" ? "" : Number(e.target.value))
+              }
+              className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-sm font-medium text-slate-700">
+              Tinggi (cm)
+            </label>
+            <input
+              type="number"
+              min={1}
+              value={tinggi}
+              onChange={(e) =>
+                setTinggi(e.target.value === "" ? "" : Number(e.target.value))
+              }
+              className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
+            />
+          </div>
+        </div>
       </form>
     </main>
   );

@@ -22,14 +22,14 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Commit: `git add . && git commit -m "V5: 1.2 Form dasar field identitas (nama, email, telepon)"`
 
 - [ ] 2. Field jenis barang dan ukuran
-  - [-] 2.1 Tambahkan field select jenis barang dengan conditional field
+  - [x] 2.1 Tambahkan field select jenis barang dengan conditional field
     - Tambahkan state `jenisBarang` dan `lainnyaJikaAda`
     - Render dropdown select "Jenis Barang" dengan opsi: "Kursi Besi", "Pagar Besi", "Kanopi", "Lainnya"
     - Tampilkan field input teks "Sebutkan jenis barang" hanya jika `jenisBarang === "Lainnya"`
     - _Requirements: 3.1, 3.2, 3.3_
     - Commit: `git add . && git commit -m "V5: 2.1 Field jenis barang dengan conditional field Lainnya"`
 
-  - [~] 2.2 Tambahkan field ukuran dalam grid 3 kolom
+  - [-] 2.2 Tambahkan field ukuran dalam grid 3 kolom
     - Tambahkan state `panjang`, `lebar`, `tinggi` (tipe `number | ""`)
     - Render tiga input number "Panjang (cm)", "Lebar (cm)", "Tinggi (cm)" dalam grid 3 kolom (`grid grid-cols-3 gap-4`)
     - Set atribut `min={1}` pada setiap input
