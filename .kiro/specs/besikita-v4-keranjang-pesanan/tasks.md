@@ -130,7 +130,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
     - Generate array `CartItem` → `total = cart.reduce((sum, item) => sum + item.subtotal, 0)` → verifikasi konsistensi
 
 - [ ] 7. Penyempurnaan cart — update quantity real-time
-  - [ ] 7.1 Hubungkan input quantity ke `updateQuantity` di `app/cart/page.tsx`
+  - [x] 7.1 Hubungkan input quantity ke `updateQuantity` di `app/cart/page.tsx`
     - Implementasikan handler `handleQuantityChange(id: string, qty: number)` → `setCart(updateQuantity(id, qty))`
     - Pasang `onChange` pada input number setiap item yang memanggil `handleQuantityChange`
     - Pastikan perubahan quantity memicu re-render `subtotal` per item dan `totalHarga`
@@ -142,7 +142,7 @@ Implementasi sistem keranjang belanja (cart) berbasis `localStorage` di atas fon
   - Tanya user jika ada pertanyaan sebelum melanjutkan
 
 - [ ] 9. Navigasi keranjang di Navbar
-  - [~] 9.1 Modifikasi `components/Navbar.tsx` — tambahkan link dan Cart_Badge
+  - [-] 9.1 Modifikasi `components/Navbar.tsx` — tambahkan link dan Cart_Badge
     - Tambahkan `"use client"` directive
     - Import `getCart` dari `@/utils/cart`
     - Tambahkan state `const [cartCount, setCartCount] = useState(0)`
