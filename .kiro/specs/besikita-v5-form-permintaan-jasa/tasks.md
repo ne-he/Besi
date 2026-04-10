@@ -81,7 +81,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - _Requirements: 6.3, 6.4_
     - Commit: `git add . && git commit -m "V5: 4.2 Preview gambar referensi dengan FileReader (thumbnail 100px)"`
 
-  - [-] 4.3 Implementasi fungsi submit dengan validasi dan simpan ke localStorage
+  - [x] 4.3 Implementasi fungsi submit dengan validasi dan simpan ke localStorage
     - Tambahkan state `errors`, `loading`, `successMessage`
     - Buat fungsi `handleSubmit(e)`: panggil `validate()`, jika ada error set `errors` dan return; jika valid set `loading=true`, panggil `buildRequestObject()` + `saveRequest()`, tampilkan success message, reset form, scroll ke atas
     - Tampilkan pesan error di bawah masing-masing field yang tidak valid
@@ -89,7 +89,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - _Requirements: 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8_
     - Commit: `git add . && git commit -m "V5: 4.3 Fungsi submit — validasi, simpan localStorage, success message, scroll top"`
 
-  - [~] 4.4 Tambahkan tombol Batal dan loading state pada tombol submit
+  - [-] 4.4 Tambahkan tombol Batal dan loading state pada tombol submit
     - Buat fungsi `handleReset()`: reset semua state field ke nilai awal, set `imagePreview` ke null, bersihkan `errors` dan `successMessage`
     - Render tombol "Batal" yang memanggil `handleReset()`
     - Render tombol "Kirim Permintaan" dengan atribut `disabled={loading}` dan teks berubah saat loading (misal "Menyimpan...")
