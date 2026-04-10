@@ -2,6 +2,13 @@
 
 import { useState } from "react";
 import { materials } from "@/data/materials";
+import {
+  validate,
+  buildRequestObject,
+  saveRequest,
+  FormState,
+  FormErrors,
+} from "@/utils/requests";
 
 export default function RequestPage() {
   const [nama, setNama] = useState("");
@@ -15,6 +22,9 @@ export default function RequestPage() {
   const [bahan, setBahan] = useState("vendor");
   const [catatan, setCatatan] = useState("");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   function handleImageChange(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
@@ -28,6 +38,55 @@ export default function RequestPage() {
     }
   }
 
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    const formState: FormState = {
+      nama,
+      email,
+      telepon,
+      jenisBarang,
+      lainnyaJikaAda,
+      panjang,
+      lebar,
+      tinggi,
+      bahan,
+      catatan,
+    };
+
+    const errs = validate(formState);
+    if (Object.keys(errs).length > 0) {
+      setErrors(errs);
+      return;
+    }
+
+    setLoading(true);
+    setErrors({});
+
+    const req = buildRequestObject(formState, imagePreview);
+    saveRequest(req);
+
+    setSuccessMessage(
+      "Permintaan berhasil dikirim! Tim kami akan menghubungi Anda segera."
+    );
+
+    // Reset semua field ke nilai awal
+    setNama("");
+    setEmail("");
+    setTelepon("");
+    setJenisBarang("");
+    setLainnyaJikaAda("");
+    setPanjang("");
+    setLebar("");
+    setTinggi("");
+    setBahan("vendor");
+    setCatatan("");
+    setImagePreview(null);
+
+    setLoading(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <main className="max-w-4xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-slate-800 mb-4">
@@ -38,7 +97,13 @@ export default function RequestPage() {
         tim kami akan menghubungi Anda.
       </p>
 
-      <form className="mt-8 space-y-6">
+      {successMessage && (
+        <div className="mt-6 p-4 bg-green-100 border border-green-400 text-green-800 rounded-lg">
+          {successMessage}
+        </div>
+      )}
+
+      <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-1">
           <label className="text-sm font-medium text-slate-700">
             Nama Lengkap
@@ -50,6 +115,9 @@ export default function RequestPage() {
             onChange={(e) => setNama(e.target.value)}
             className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
           />
+          {errors.nama && (
+            <p className="text-red-500 text-xs">{errors.nama}</p>
+          )}
         </div>
 
         <div className="flex flex-col gap-1">
@@ -61,6 +129,9 @@ export default function RequestPage() {
             onChange={(e) => setEmail(e.target.value)}
             className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
           />
+          {errors.email && (
+            <p className="text-red-500 text-xs">{errors.email}</p>
+          )}
         </div>
 
         <div className="flex flex-col gap-1">
@@ -74,6 +145,9 @@ export default function RequestPage() {
             onChange={(e) => setTelepon(e.target.value)}
             className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
           />
+          {errors.telepon && (
+            <p className="text-red-500 text-xs">{errors.telepon}</p>
+          )}
         </div>
 
         <div className="flex flex-col gap-1">
@@ -95,6 +169,9 @@ export default function RequestPage() {
             <option value="Kanopi">Kanopi</option>
             <option value="Lainnya">Lainnya</option>
           </select>
+          {errors.jenisBarang && (
+            <p className="text-red-500 text-xs">{errors.jenisBarang}</p>
+          )}
         </div>
 
         {jenisBarang === "Lainnya" && (
@@ -109,6 +186,9 @@ export default function RequestPage() {
               onChange={(e) => setLainnyaJikaAda(e.target.value)}
               className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
+            {errors.lainnyaJikaAda && (
+              <p className="text-red-500 text-xs">{errors.lainnyaJikaAda}</p>
+            )}
           </div>
         )}
 
@@ -126,6 +206,9 @@ export default function RequestPage() {
               }
               className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
+            {errors.panjang && (
+              <p className="text-red-500 text-xs">{errors.panjang}</p>
+            )}
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-sm font-medium text-slate-700">
@@ -140,6 +223,9 @@ export default function RequestPage() {
               }
               className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
+            {errors.lebar && (
+              <p className="text-red-500 text-xs">{errors.lebar}</p>
+            )}
           </div>
           <div className="flex flex-col gap-1">
             <label className="text-sm font-medium text-slate-700">
@@ -154,6 +240,9 @@ export default function RequestPage() {
               }
               className="border rounded-lg px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-orange-400"
             />
+            {errors.tinggi && (
+              <p className="text-red-500 text-xs">{errors.tinggi}</p>
+            )}
           </div>
         </div>
 
@@ -203,6 +292,36 @@ export default function RequestPage() {
           {imagePreview !== null && (
             <img src={imagePreview} width={100} alt="Preview" className="rounded mt-2" />
           )}
+        </div>
+
+        <div className="flex gap-3">
+          <button
+            type="submit"
+            disabled={loading}
+            className="bg-orange-500 hover:bg-orange-600 disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold px-6 py-2 rounded-lg transition-colors"
+          >
+            {loading ? "Mengirim..." : "Kirim Permintaan"}
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setNama("");
+              setEmail("");
+              setTelepon("");
+              setJenisBarang("");
+              setLainnyaJikaAda("");
+              setPanjang("");
+              setLebar("");
+              setTinggi("");
+              setBahan("vendor");
+              setCatatan("");
+              setImagePreview(null);
+              setErrors({});
+            }}
+            className="border border-slate-300 hover:bg-slate-50 text-slate-700 font-semibold px-6 py-2 rounded-lg transition-colors"
+          >
+            Batal
+          </button>
         </div>
       </form>
     </main>
