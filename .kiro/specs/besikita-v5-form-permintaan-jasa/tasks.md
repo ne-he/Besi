@@ -52,7 +52,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Commit: `git add . && git commit -m "V5: 3.2 Textarea catatan dan input file gambar referensi"`
 
 - [ ] 4. Validasi, preview gambar, dan submit
-  - [-] 4.1 Buat utils/requests.ts dengan fungsi validate, buildRequestObject, saveRequest, getRequests
+  - [x] 4.1 Buat utils/requests.ts dengan fungsi validate, buildRequestObject, saveRequest, getRequests
     - Tambahkan interface `RequestObject` ke `types/index.ts` (id, nama, email, telepon, jenisBarang, lainnyaJikaAda, panjang, lebar, tinggi, bahan, catatan, gambarPreview, status: "baru", createdAt)
     - Buat `utils/requests.ts` dengan export: `FormState`, `FormErrors`, `validate()`, `buildRequestObject()`, `saveRequest()`, `getRequests()`
     - `validate()` mengembalikan semua error sekaligus (tidak berhenti di error pertama)
@@ -74,7 +74,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Tag setiap test: `// Feature: besikita-v5-form-permintaan-jasa, Property N: <teks>`
     - Commit: `git add . && git commit -m "V5: 4.1a Property-based tests untuk utils/requests.ts (fast-check)"`
 
-  - [~] 4.2 Implementasi preview gambar dengan FileReader
+  - [-] 4.2 Implementasi preview gambar dengan FileReader
     - Tambahkan state `imagePreview` (`string | null`)
     - Buat fungsi `handleImageChange(e)`: baca file dengan `FileReader.readAsDataURL`, set `imagePreview` ke data URL hasil baca; handle `onerror` dengan set `imagePreview` ke null
     - Tampilkan thumbnail `<img>` dengan `width={100}` di bawah input file jika `imagePreview` tidak null
