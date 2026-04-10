@@ -7,14 +7,14 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
 ## Tasks
 
 - [ ] 1. Persiapan halaman dan form dasar
-  - [-] 1.1 Buat halaman skeleton dan tambah link Navbar
+  - [x] 1.1 Buat halaman skeleton dan tambah link Navbar
     - Buat folder `app/request/` dengan file `page.tsx` sebagai Client Component (`"use client"`)
     - Tampilkan heading "Permintaan Jasa Kustom" dan deskripsi singkat layanan custom order
     - Tambahkan `<Link href="/request">Custom Order</Link>` di `components/Navbar.tsx` antara "Galeri" dan "Kontak"
     - _Requirements: 1.1, 1.2, 1.3_
     - Commit: `git add . && git commit -m "V5: 1.1 Skeleton halaman /request dan link Navbar Custom Order"`
 
-  - [~] 1.2 Buat form dasar dengan useState untuk field identitas
+  - [-] 1.2 Buat form dasar dengan useState untuk field identitas
     - Tambahkan state `nama`, `email`, `telepon` dengan `useState`
     - Render tiga field: input text "Nama Lengkap", input email "Email", input tel "Nomor Telepon"
     - Styling Tailwind: label, input dengan border/rounded/focus ring, layout vertikal
