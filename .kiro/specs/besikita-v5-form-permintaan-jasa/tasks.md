@@ -29,7 +29,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - _Requirements: 3.1, 3.2, 3.3_
     - Commit: `git add . && git commit -m "V5: 2.1 Field jenis barang dengan conditional field Lainnya"`
 
-  - [-] 2.2 Tambahkan field ukuran dalam grid 3 kolom
+  - [x] 2.2 Tambahkan field ukuran dalam grid 3 kolom
     - Tambahkan state `panjang`, `lebar`, `tinggi` (tipe `number | ""`)
     - Render tiga input number "Panjang (cm)", "Lebar (cm)", "Tinggi (cm)" dalam grid 3 kolom (`grid grid-cols-3 gap-4`)
     - Set atribut `min={1}` pada setiap input
@@ -37,7 +37,7 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Commit: `git add . && git commit -m "V5: 2.2 Field ukuran panjang/lebar/tinggi grid 3 kolom"`
 
 - [ ] 3. Bahan dan catatan
-  - [~] 3.1 Tambahkan dropdown pilihan bahan besi dari data/materials.ts
+  - [-] 3.1 Tambahkan dropdown pilihan bahan besi dari data/materials.ts
     - Tambahkan state `bahan` dengan nilai default `"vendor"`
     - Import `materials` dari `data/materials.ts`
     - Render dropdown "Pilihan Bahan Besi": opsi pertama "Sesuai rekomendasi vendor" (value `"vendor"`), diikuti semua item dari `materials` (value = `material.id`, label = `material.nama`)
