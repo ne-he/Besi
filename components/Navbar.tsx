@@ -28,6 +28,9 @@ export default function Navbar() {
             <Link href="/gallery" className="hover:text-slate-300 transition-colors">
               Galeri
             </Link>
+            <Link href="/request" className="hover:text-slate-300 transition-colors">
+              Custom Order
+            </Link>
             <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Kontak
             </Link>
