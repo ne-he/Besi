@@ -74,14 +74,14 @@ Implementasi halaman `/request` sebagai jalur custom order. Dibangun di atas V4 
     - Tag setiap test: `// Feature: besikita-v5-form-permintaan-jasa, Property N: <teks>`
     - Commit: `git add . && git commit -m "V5: 4.1a Property-based tests untuk utils/requests.ts (fast-check)"`
 
-  - [-] 4.2 Implementasi preview gambar dengan FileReader
+  - [x] 4.2 Implementasi preview gambar dengan FileReader
     - Tambahkan state `imagePreview` (`string | null`)
     - Buat fungsi `handleImageChange(e)`: baca file dengan `FileReader.readAsDataURL`, set `imagePreview` ke data URL hasil baca; handle `onerror` dengan set `imagePreview` ke null
     - Tampilkan thumbnail `<img>` dengan `width={100}` di bawah input file jika `imagePreview` tidak null
     - _Requirements: 6.3, 6.4_
     - Commit: `git add . && git commit -m "V5: 4.2 Preview gambar referensi dengan FileReader (thumbnail 100px)"`
 
-  - [~] 4.3 Implementasi fungsi submit dengan validasi dan simpan ke localStorage
+  - [-] 4.3 Implementasi fungsi submit dengan validasi dan simpan ke localStorage
     - Tambahkan state `errors`, `loading`, `successMessage`
     - Buat fungsi `handleSubmit(e)`: panggil `validate()`, jika ada error set `errors` dan return; jika valid set `loading=true`, panggil `buildRequestObject()` + `saveRequest()`, tampilkan success message, reset form, scroll ke atas
     - Tampilkan pesan error di bawah masing-masing field yang tidak valid
