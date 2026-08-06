@@ -4,3 +4,6 @@ out
 .env
 .env.local
 .env*.local
+
+# spec draft tool lokal, bukan bagian dari produk
+.kiro/
