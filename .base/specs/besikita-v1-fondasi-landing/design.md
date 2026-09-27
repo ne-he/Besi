@@ -187,7 +187,7 @@ const advantages: AdvantageItem[] = [
 
 ## Correctness Properties
 
-*A property is a characteristic or behavior that should hold true across all valid executions of a system — essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
+*A property is a characteristic or behavior that should hold true across all valid executions of a system: essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
 
 ### Property 1: Setiap item navigasi Navbar memiliki href yang benar
 
@@ -233,8 +233,8 @@ Karena V1 adalah website statis tanpa API calls atau user input yang kompleks, s
 
 Testing V1 menggunakan dua pendekatan yang saling melengkapi:
 
-1. **Unit/Example Tests** — memverifikasi konten spesifik dan struktur komponen
-2. **Property-Based Tests** — memverifikasi invariant yang berlaku untuk semua input
+1. **Unit/Example Tests**: memverifikasi konten spesifik dan struktur komponen
+2. **Property-Based Tests**: memverifikasi invariant yang berlaku untuk semua input
 
 ### Library yang Digunakan
 
@@ -273,7 +273,7 @@ Setiap property test harus dijalankan minimum **100 iterasi** menggunakan fast-c
 Setiap test diberi tag komentar dengan format:
 `// Feature: besikita-v1-fondasi-landing, Property {N}: {deskripsi singkat}`
 
-**Property 1 — Navbar href invariant**
+**Property 1: Navbar href invariant**
 ```typescript
 // Feature: besikita-v1-fondasi-landing, Property 1: Setiap item navigasi Navbar memiliki href yang benar
 // Untuk setiap kombinasi item navigasi yang valid, href harus sesuai dengan mapping yang ditentukan
@@ -287,7 +287,7 @@ fc.assert(
 );
 ```
 
-**Property 2 — LayananSection selalu 3 kartu**
+**Property 2: LayananSection selalu 3 kartu**
 ```typescript
 // Feature: besikita-v1-fondasi-landing, Property 2: Section Layanan Kami merender tepat 3 ServiceCard
 fc.assert(
@@ -300,7 +300,7 @@ fc.assert(
 );
 ```
 
-**Property 3 — Setiap ServiceCard href /services**
+**Property 3: Setiap ServiceCard href /services**
 ```typescript
 // Feature: besikita-v1-fondasi-landing, Property 3: Setiap ServiceCard memiliki tombol Detail yang mengarah ke /services
 fc.assert(
@@ -313,7 +313,7 @@ fc.assert(
 );
 ```
 
-**Property 4 — KeunggulanSection render judul dan deskripsi**
+**Property 4: KeunggulanSection render judul dan deskripsi**
 ```typescript
 // Feature: besikita-v1-fondasi-landing, Property 4: Setiap item keunggulan dirender dengan judul dan deskripsi
 fc.assert(
@@ -331,4 +331,4 @@ fc.assert(
 - Unit tests dan property tests berjalan bersama dengan `vitest --run`
 - Tidak ada watch mode di CI/CD
 - Coverage target: semua komponen utama tercakup minimal oleh satu test
-- Property tests menggunakan `fc.constantFrom` karena data bersifat statis — ini tetap valid sebagai property test karena memverifikasi invariant berlaku untuk setiap elemen data
+- Property tests menggunakan `fc.constantFrom` karena data bersifat statis. Ini tetap valid sebagai property test karena memverifikasi invariant berlaku untuk setiap elemen data

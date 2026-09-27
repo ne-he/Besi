@@ -98,7 +98,7 @@ export function saveRequest(req: RequestObject): void {
     existing.push(req);
     localStorage.setItem(REQUESTS_KEY, JSON.stringify(existing));
   } catch {
-    // silent fail — localStorage tidak tersedia (SSR / private browsing)
+    // silent fail: localStorage tidak tersedia (SSR / private browsing)
   }
 }
 

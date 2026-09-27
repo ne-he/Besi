@@ -161,5 +161,5 @@ Implementasi dilakukan secara inkremental dalam 10 subtask, masing-masing merepr
 - Subtask bertanda `*` bersifat opsional dan dapat dilewati untuk MVP yang lebih cepat
 - Setiap subtask implementasi diakhiri dengan git commit sesuai format `V1: [nama subtask] - [deskripsi singkat]`
 - Jalankan tests dengan `vitest --run` (bukan watch mode)
-- Property tests menggunakan `fc.constantFrom` karena data statis — tetap valid untuk memverifikasi invariant berlaku pada setiap elemen data
+- Property tests menggunakan `fc.constantFrom` karena data statis, jadi tetap valid untuk memverifikasi invariant berlaku pada setiap elemen data
 - Semua komponen adalah React Server Components kecuali ada kebutuhan interaktivitas

@@ -24,7 +24,7 @@ export function saveCart(cart: CartItem[]): void {
   try {
     localStorage.setItem(CART_KEY, JSON.stringify(cart));
   } catch {
-    // silent fail — localStorage tidak tersedia (SSR / private browsing)
+    // silent fail: localStorage tidak tersedia (SSR / private browsing)
   }
 }
 
